@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  background: black;
+  border: solid;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+}
+
+svg {
+  animation-name: up-and-down;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+@keyframes up-and-down {
+  0% {
+    transform: translateY(-150%);
+  }
+
+  100% {
+    transform: translateY(150%);
+  }
+}
